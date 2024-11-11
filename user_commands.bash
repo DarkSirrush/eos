@@ -26,7 +26,7 @@ EOF
 cat << EOF >> /etc/pacman.conf
 [lizardbyte-beta]
 SigLevel = Optional
-Server = https://github.com/LizardByte/pacman-repo/releases/download/betatslib
+Server = https://github.com/LizardByte/pacman-repo/releases/download/beta
 EOF
 cat << EOF >> /etc/fstab
 media@media.server:/storage               /storage       fuse.sshfs    x-systemd.automount,_netdev,reconnect,IdentityFile=/home/sirrush/.ssh/id_ed25519,allow_other,default_permissions  0   0
