@@ -3,3 +3,4 @@ cat << EOF >> /etc/pacman.conf
 SigLevel = Optional
 Server = https://github.com/LizardByte/pacman-repo/releases/download/beta
 EOF
+pacman -Sy
