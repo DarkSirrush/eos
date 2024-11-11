@@ -28,6 +28,7 @@ cat << EOF >> /etc/pacman.conf
 SigLevel = Optional
 Server = https://github.com/LizardByte/pacman-repo/releases/download/beta
 EOF
+pacman -Sy
 cat << EOF >> /etc/fstab
-media@media.server:/storage               /storage       fuse.sshfs    x-systemd.automount,_netdev,reconnect,IdentityFile=/home/sirrush/.ssh/id_ed25519,allow_other,default_permissions  0   0
+media@media.server:/storage               /storage       fuse.sshfs    x-systemd.automount,_netdev,uid=1000,gid=1001,reconnect,IdentityFile=/home/sirrush/.ssh/id_ed25519,allow_other,default_permissions  0 0
 EOF
