@@ -1,0 +1,10 @@
+UUID=9AE7-1114                            /efi           vfat    fmask=0137,dmask=0027 0 2
+UUID=2eb8ca4d-154e-40e8-b968-724e59ef2686 swap           swap    defaults   0 0
+UUID=91ec0a3d-f64c-4c1f-8c06-e2af62a78b7e /              btrfs   subvol=/@,noatime,compress=zstd 0 0
+UUID=91ec0a3d-f64c-4c1f-8c06-e2af62a78b7e /var/cache     btrfs   subvol=/@cache,noatime,compress=zstd 0 0
+UUID=91ec0a3d-f64c-4c1f-8c06-e2af62a78b7e /var/log       btrfs   subvol=/@log,noatime,compress=zstd 0 0
+UUID=4a515a7e-6796-468b-a0a0-cd5c34f8b1e3 /home          btrfs   noatime,compress=zstd,exec 0 0
+UUID=3ae7eb65-5622-4cc7-a861-6488b60ff6b8 /games         btrfs   noatime,compress=zstd,exec 0 0
+UUID=61d09f92-737b-425f-bf3b-e561d944fb53 /VM            ext4    noatime,nofail,exec 0 0
+tmpfs                                     /tmp           tmpfs   defaults,noatime,mode=1777 0 0
+media@media.server:/storage               /storage       fuse.sshfs    x-systemd.automount,_netdev,uid=1000,gid=1001,reconnect,IdentityFile=/home/sirrush/.ssh/id_ed25519,allow_other,default_permissions  0 0
